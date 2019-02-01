@@ -1,0 +1,13 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+
+<%= form_for(@post) do |f|%>
+<%= f.label :title, "Title"%>
+<%= f.text_field :title %><br>
+<%= f.label :status, "status"%>
+<%= f.text_field :status %><br>
+<%= f.label :picture %>
+<%= f.file_field :picture %><br>
+<%= f.submit "Post it!"%>
+<% end %>

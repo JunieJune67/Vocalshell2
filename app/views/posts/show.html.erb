@@ -1,0 +1,14 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+
+    <h3><%= @post.title %></h3>
+    <h4> <%= @post.status %></h4>
+         <% end %>
+    <p>
+  <%= image_tag(@post.picture, width: 200) if @post.picture.attached? %> 
+</p>
+
+<% end %>
+   
+   

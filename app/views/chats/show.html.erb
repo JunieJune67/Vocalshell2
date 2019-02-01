@@ -1,0 +1,25 @@
+
+
+<h1>Vocal Shell Chat Room</h1>
+<%= link_to 'signin', user_session_path %>
+
+<h1>Chat</h1>
+<div class="chat">
+  <div class="messages">
+    <div class="message">
+      <span class="user">User:</span> Let's chat!
+    </div>
+  </div>
+  <form>
+    <label for="message">Message:</label>
+    <input type="text" id="message" placeholder="Enter your message..." />
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
+
+
+
+<%= link_to 'Log Out', destroy_user_session_path, method: :DELETE %>
+

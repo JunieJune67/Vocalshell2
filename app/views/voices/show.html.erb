@@ -1,0 +1,8 @@
+<h1>Voices#show</h1>
+<p>Find me in app/views/voices/show.html.erb</p>
+
+<% form_for @voice do |form| %>
+<%= form.label "VS" %>
+<%= form.file_field :song_file %>
+<%= form.submit "Submit"%>
+<% end %>
