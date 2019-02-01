@@ -1,7 +1,20 @@
+<style>
 
 
-<h1>Vocal Shell Chat Room</h1>
-<%= link_to 'signin', user_session_path %>
+</style>
+<h1 id="hero-text">Vocal Shell Chat Room</h1>
+
+     <h3 id="ontop">Vocal Feed </h3>
+      <%= link_to 'signin', user_session_path %>
+<% if session[:user_id]!= nil%>
+  <%= link_to 'signin', user_session_path %>
+
+
+    <% else %>
+   
+   
+ 
+  <% end %>
 
 <h1>Chat</h1>
 <div class="chat">
@@ -16,10 +29,11 @@
     <button type="submit">Send</button>
   </form>
 </div>
-
-
-
-
-
 <%= link_to 'Log Out', destroy_user_session_path, method: :DELETE %>
+
+
+
+
+
+
 

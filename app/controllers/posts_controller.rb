@@ -26,6 +26,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-  params.require(:post).permit(:title, :status, :song_file)
+  params.require(:post).permit(:title, :status, uploads: [])
   end
 end

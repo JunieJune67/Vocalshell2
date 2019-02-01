@@ -1,2 +1,13 @@
 <h1>Posts#index</h1>
 <p>Find me in app/views/posts/index.html.erb</p>
+
+<p>
+  <strong>Uploads:</strong> <br/>
+  <% if post.uploads.attached? %>
+    <% post.uploads.each do |upload| %>
+      <%= link_to upload.filename, upload, target: '_blank' %> <br/>
+    <% end %>
+  <% else %>
+    <p>no uploads</p>
+  <% end %>
+</p>

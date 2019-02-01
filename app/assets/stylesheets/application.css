@@ -19,6 +19,17 @@
  @import 'bourbon';
  @import 'base/base';
 
+ body {
+   background-color: beige;
+ }
+
+ #hero-text {
+  font-family: 'Bangers', cursive;
+ }
+
+ #ontop {
+  font-family: 'Oswald', sans-serif;
+ }
 
  .container {
     margin: 0 auto;
