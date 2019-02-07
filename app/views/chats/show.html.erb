@@ -12,6 +12,12 @@
 
     <% else %>
 
+
+   
+
+ 
+  <% end %>
+
     <%= form_for(@post) do |f|%>
 <%= f.label :title, "Title"%>
 <%= f.text_field :title %><br>
@@ -21,11 +27,6 @@
 <%= f.file_field :uploads, multiple: true %>
 <%= f.submit "Post it!"%>
 <% end %>
-   
-
- 
-  <% end %>
-
 
 
 
