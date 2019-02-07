@@ -12,21 +12,13 @@
 
     <% else %>
 
-
+<li><%= link_to 'Upload', 'post#new' %></li>
    
 
  
   <% end %>
 
-    <%= form_for(@post) do |f|%>
-<%= f.label :title, "Title"%>
-<%= f.text_field :title %><br>
-<%= f.label :status, "status"%>
-<%= f.text_field :status %><br>
-<%= f.label :uploads %>
-<%= f.file_field :uploads, multiple: true %>
-<%= f.submit "Post it!"%>
-<% end %>
+   
 
 
 
